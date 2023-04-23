@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px rgb(27, 174, 247);
+  --webkit-box-shadow: 0 8px 6px -6px rgb(34, 201, 242);
+  border-bottom: solid rgba(22, 160, 240, 0.355) !important;
+}
+.nav-link {
+  font-weight: 300 !important;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+}
+.active {
+  /* border-bottom: 2px solid rgb(30, 63, 231); */
+  box-shadow: 5px 5px 10px 1px rgba(19, 78, 225, 0.2);
+  border-radius: 15px;
+  
+}
+
+
+/* *****************sidebar in admin****************************** */
+.sidebar-sticky .nav-item:hover {
+  background-color: #6093f869
+}
+
+.table-hover tbody tr:hover {
+  background-color: #6093f869
+}
+
+
+
+
+
+/* *********************************************** */
+/* .footer{
+
+  background: linear-gradient(to bottom, white, skyblue);
+  padding: 0 20px 0 20px;
+} */
+/* =============================
+==========footer============= */
+
+.footer {
+  color: white;
+  padding: 25px;
+  /* background: #000000; fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6093f8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eeebeb, #3798f8);
+}
+
+.footer a {
+  text-decoration: none; 
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #3e50ee;
+  border-bottom: 1px solid #0d3fe3;
+}
+
+
+/* ========================================= */
+/* =========contact us & about ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ========================================= */
+/* =========login ========= */
+.wrapper{
+  /* background: #a7dbed; */
+  background: linear-gradient(to bottom, white, skyblue);
+  padding: 0 20px 0 20px;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.row{
+  width: 900px;
+  height: 550px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 5px 5px 10px 1px rgba(19, 78, 225, 0.2);
+}
+.side-image{
+  background-image: url("./images/2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 10px 0 0 10px;
+}
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text p{
+  color: #fff;
+  font-size: 18px;
+}
+i{
+  font-weight: 400;
+  font-size: 15px;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.input-box{
+  width: 330px;
+  box-sizing: border-box;
+}
+.input-box header{
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 10px 0 10px;
+}
+.input{
+  height: 45px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  outline: none;
+  margin-bottom: 20px;
+  color: #40414a;
+}
+
+.input-field .input:focus, .input-field .input:valid{
+  border-bottom: 1px solid #142cdf;
+}
+.submit-btn{
+  border: none;
+  outline: none;
+  height: 45px;
+  /* background: #ececec; */
+  border-radius: 5px;
+  transition: .4s;
+  margin-top: 20px;
+}
+.submit-btn:hover{
+  background: rgba(44, 133, 228, 0.9);
+  color: #fff;
+}
+
+
+
+.signin{
+  text-align: center;
+  font-size: small;
+  margin-top: 25px;
+}
+span a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  transition: .5s;
+}
+span a:hover{
+  text-decoration: underline;
+  color: #000;
+}
+@media only screen and (max-width: 768px){
+  .side-image{
+      border-radius: 10px 10px 0 0;
+  }
+  img{
+      width: 35px;
+      position: absolute;
+      top: 20px;
+      left: 47%;
+  }
+  .text{
+      position: absolute;
+      top: 70%;
+      text-align: center;
+  }
+  .text p,i{
+      font-size: 17px;
+  }
+  .row{
+      max-width: 420px;
+      width: 100%;
+  }
+}
